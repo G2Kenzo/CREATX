@@ -1,0 +1,964 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.navbar,
+.navbar__list,
+.navbar__rigth,
+.navbar__register {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Lato";
+}
+
+.navbar__register-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar__wrapper {
+  background-color: white;
+  padding: 25px 0 0 0;
+}
+
+.navbar__link {
+  /* About Us */
+
+  /* base/bold */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  /* identical to box height, or 26px */
+  display: flex;
+  align-items: center;
+
+  /* gray/800 */
+  color: #424551;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: flex-start;
+  flex-grow: 0;
+}
+
+.navbar__list {
+  gap: 50px;
+}
+
+.navbar__link:hover {
+  /* Courses */
+
+  color: #ff3f3a;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar__btn {
+  /* Get consultation */
+
+  /* btn/solid/large */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 40px;
+  gap: 10px;
+
+  width: 206px;
+  height: 52px;
+
+  /* btn-gradient */
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border-radius: 4px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: flex-start;
+  flex-grow: 0;
+
+  /* Get consultation */
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 52px;
+  /* identical to box height, or 325% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+
+  /* white */
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border: none;
+}
+
+.navbar__rigth {
+  gap: 20px;
+}
+
+.navbar__register {
+  gap: 5px;
+
+  /* Log in / Register */
+
+  /* base/bold */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  /* identical to box height, or 26px */
+  display: flex;
+  align-items: center;
+
+  /* gray/800 */
+  color: #424551;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.study__wrapper {
+  background-color: #fff;
+}
+
+.study {
+  margin-top: 40px;
+}
+
+.study__text {
+  /* Enjoy your studying! */
+
+  /* h6
+
+subheading
+*/
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  /* gray/900 */
+  color: #1e212c;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-align: center;
+}
+
+.study__title {
+  /* Our online courses */
+  text-align: center;
+
+  /* h1 */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  /* identical to box height, or 60px */
+
+  /* gray/900 */
+  color: #1e212c;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.study__navbar {
+  margin-top: 100px;
+}
+
+.study__navbar-list,
+.study__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.study__navbar-list {
+  gap: 50px;
+}
+
+.study__navbar-link {
+  /* base/bold */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  /* identical to box height, or 26px */
+  text-align: center;
+
+  /* gray/600 */
+  color: #9a9ca5;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+}
+
+.study__navbar-link:hover {
+  color: #ff3f3a;
+  border: 1px solid #ff3f3a;
+}
+
+.study__input {
+  /* input/default */
+
+  box-sizing: border-box;
+
+  width: 315px;
+  height: 44px;
+  padding: 0 15px;
+
+  /* white */
+  background: #ffffff;
+  /* gray/400 */
+  border-radius: 4px;
+
+  /* Search course... */
+
+  /* small/regular */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+
+  /* gray/600 */
+  color: #9a9ca5;
+  border: 1px solid #d7dadd;
+}
+
+.study__input:focus {
+  outline: none;
+  border: 1px solid #9a9ca5;
+}
+
+.study__search-icon {
+  position: relative;
+  width: 18px;
+  right: 50px;
+  top: 6px;
+}
+
+.study__cards {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.study__card {
+  /* card/vertical */
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+
+  box-sizing: border-box;
+
+  width: 350px;
+  height: 438px;
+
+  /* white */
+  background: #ffffff;
+  /* gray/300 */
+  border: 1px solid #e5e8ed;
+  /* shadow/small */
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+}
+
+.study__card:hover {
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+
+.study__card-type {
+  /* badge */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1px 8px;
+  gap: 10px;
+
+  width: 79px;
+  height: 23px;
+
+  /* success */
+  background: #03cea4;
+  border-radius: 4px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+
+  /* white */
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.study__card-title {
+  /* The Ultimate Google Ads Training Course */
+
+  width: 342px;
+  height: 60px;
+
+  /* lead/bold */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+
+  /* gray/900 */
+  color: #1e212c;
+}
+
+.study__card-price {
+  /* speaker */
+
+  display: flex;
+  align-items: center;
+
+  /* large/regular */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* identical to box height, or 27px */
+
+  /* gray/700 */
+  color: #787a80;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.study__card-price-value {
+  color: #ff3f3a;
+}
+
+.study__card-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.imagesss {
+  width: 100%;
+  height: 270px;
+}
+
+.student__wrapper {
+  width: 100%;
+  background: rgb(236, 234, 234);
+  padding: 20px 0;
+}
+
+.student__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  /* gray/900 */
+  color: #1e212c;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.student__title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  /* identical to box height, or 60px */
+  text-align: center;
+
+  /* gray/900 */
+  color: #1e212c;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-bottom: 100px;
+}
+
+.student__swiper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.student__swipe {
+  /* testimonial */
+  background-color: white;
+  width: 1020px;
+  height: 344px;
+  /* margin-top: 100px; */
+  border-radius: 15px;
+}
+
+.student__arrow-right,
+.student__arrow-left {
+  width: 20px;
+  height: 25px;
+}
+
+.stident__arrov {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stident__arrov:hover {
+  background-color: #ff3f3a;
+}
+
+.stident__arrov:hover svg {
+  color: #ffffff;
+}
+
+.stident__arrov:active {
+  background-color: #993c06;
+} .cer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+} .certificat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+} .cer-top {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    /* gray/900 */
+    color: #1E212C;
+} .cer-center {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    /* or 60px */
+
+    /* gray/900 */
+    color:  #1E212C;
+} .cer-bottom {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+} .cer-logos {
+    width: 395px;
+    height: 50px;
+} .cer-right {
+    margin-left: 110px;
+    display: flex;
+    justify-content: flex-end;
+} .sub {
+    width: 100%;
+    background-color: #ffc5d6;
+    margin: auto;
+} .sub-title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    /* gray/900 */
+    color: #1E212C;
+} .subscribe {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    /* or 60px */
+    text-align: center;
+
+    /* gray/900 */
+    color: #1E212C;
+} .sub-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 120px;
+} .inp {
+    height: 52px;
+    background: #FFFFFF;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    width: 422px;
+} .sub-btn {
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+    gap: 20px;
+    width: 154px;
+    height: 52px;   
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border-radius: 4px;
+    border: none;
+    color: white;
+} .sub-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+} .sub-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+} .sub-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} .Footer_wraper{
+    width: 100%;
+    height: 344px;
+    border: 1px solid rgba(30, 33, 44, 1);
+    background-color: rgba(30, 33, 44, 1);
+}
+
+.Footer{
+    width: 1200px;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.CreatX{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.CreatX_text{
+
+width: 279px;
+height: 90px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+
+color: #FFFFFF;
+
+opacity: 0.6;
+}
+
+.SITE_MAP{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+}
+
+.SITE_MAP_text1{
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+
+color: #FFFFFF;
+
+}
+
+.SITE_MAP_text2 {
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+color: gray;
+
+}
+
+.SITE_MAP_text3 {
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+color: gray;
+
+}
+
+.SITE_MAP_text4 {
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+color: gray;
+
+}
+
+.SITE_MAP_text5 {
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+color: gray;
+
+}
+
+.SITE_MAP_text6 {
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+color: gray;
+
+}
+
+.courses{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+}
+
+.courses_text1{
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+
+color: #FFFFFF;
+
+}
+
+.courses_text2{
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+color: gray;
+
+}
+
+.courses_text3{
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+color: gray;
+
+}
+
+.courses_text4{
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+color: gray;
+
+}
+
+.courses_text5{
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+color: gray;
+
+}
+
+.courses_text6{
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+color: gray;
+
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+}
+
+.contacts_text1{
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+
+color: #FFFFFF;
+
+} .contacts_num{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+color: gray;
+} .contacts_mail{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+color: gray;
+} .sign_up{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+} .sign_up_text1{
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+
+color: #FFFFFF;
+
+} .sign_up_input{
+width: 286px;
+height: 36px;
+
+background-color: rgb(73, 73, 73);
+border-radius: 3px;
+border: none;
+
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+color: rgb(126, 126, 126);
+} .sign_up_input:focus{
+    outline: none;
+} .sign_up_text2{
+
+width: 286px;
+height: 30px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 150%;
+
+color: #FFFFFF;
+
+} .end_footer{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #2e313b;
+    background-color: #2e313b;
+    margin-top: -20px;
+} .end{
+    width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} .end_text1{
+color: #E5E8ED;
+} .end_text2{
+color: #797a7a;
+} .center-box {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1020px;
+    height: 344px;
+} .center-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 30px */
+
+    /* gray/800 */
+    color: #424551;
+} .center-cont {
+    margin: auto;
+    width: 750px;
+    height: 216px;
+} .women {
+    width: 70px;
+    height: 70px;
+} .center-img-text {
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+} .cen-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+} .cen-text-1 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    /* identical to box height, or 26px */
+
+    /* gray/900 */
+    color: #1E212C; 
+} .cen-text-2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+
+    /* gray/700 */
+    color: #787A80;
+} 
