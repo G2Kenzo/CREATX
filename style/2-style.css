@@ -18,7 +18,9 @@ a {
 .container {
   width: 1200px;
   margin: auto;
-}
+}  html, body {
+    overflow-x: hidden;
+} 
 
 .navbar,
 .navbar__list,

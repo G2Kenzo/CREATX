@@ -1291,4 +1291,6 @@ color: #FFFFFF;
 color: #E5E8ED;
 } .end_text2{
 color: #797a7a;
-}
+}  html, body {
+    overflow-x: hidden;
+} 
