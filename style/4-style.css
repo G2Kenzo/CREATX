@@ -741,4 +741,14 @@ color: #FFFFFF;
 color: #E5E8ED;
 } .end_text2{
 color: #797a7a;
+} .a:hover ,
+  .b:hover , 
+  .c:hover , 
+  .d:hover , 
+  .e:hover , 
+  .f:hover , 
+  .g:hover , 
+  .h:hover ,
+  .i:hover {
+    box-shadow: 0px 0px 81px 16px rgba(162, 162, 162, 0.2);
 }
