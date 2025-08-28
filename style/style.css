@@ -21,6 +21,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+} .navbar_container {
+    padding: 20px 0 0 0;
 } .nav_user {
     width: 18px;
     height: 18px;
